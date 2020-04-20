@@ -13,7 +13,7 @@ def f(t,y): #a function which return an array
     y1=y[0] #here y1=y
     y2=y[1] #y2=y'
     return np.array([y2,(2*t*y2-2*y1+(t**3)*np.log(t))/(t*t)]) #we devide the eq in two part ie y'=y2 and y2'=(2ty2-2y1+(t^3)log(t))/(t^2)
-h=0.01 #stepsize
+h=0.001 #stepsize
 t_sol=np.array(1) #initial value of t 
 y_sol=np.array([[1.0,0.0]]) #1st and 2nd element of the array are initial value of y and y' respectively 
 t=1
